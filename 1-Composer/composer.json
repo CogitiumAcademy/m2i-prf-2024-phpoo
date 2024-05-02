@@ -1,0 +1,17 @@
+{
+    "name": "cogit/1-composer",
+    "description": "Test composer",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Cogit\\1Composer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "PhG",
+            "email": "info@cogitium.com"
+        }
+    ],
+    "require": {}
+}
