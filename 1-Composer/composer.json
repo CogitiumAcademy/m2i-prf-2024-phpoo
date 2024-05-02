@@ -13,5 +13,7 @@
             "email": "info@cogitium.com"
         }
     ],
-    "require": {}
+    "require": {
+        "cocur/slugify": "^4.5"
+    }
 }
