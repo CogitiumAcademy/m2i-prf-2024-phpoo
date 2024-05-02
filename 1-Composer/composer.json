@@ -4,7 +4,7 @@
     "type": "project",
     "autoload": {
         "psr-4": {
-            "Cogit\\1Composer\\": "src/"
+            "App\\": "src/"
         }
     },
     "authors": [
