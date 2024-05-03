@@ -124,3 +124,9 @@ foreach ($classes as $classe) {
 }
 
 echo '</ol>';
+
+echo '<hr><h2>Quelques tests</h2>';
+
+echo "La clase de " . $apprenant1->getNom() . " est : " . $apprenant1->getClasse()->getNom();
+echo "<br>";
+echo "L'école de la classe " . $full->getNom() . " est : " . $full->getEcole()->getNom();

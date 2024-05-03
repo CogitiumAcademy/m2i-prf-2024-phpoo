@@ -2,6 +2,8 @@
 
 namespace Classes;
 
+use Classes\Ecole;
+
 class Classe
 {
     private string $nom;
@@ -11,7 +13,7 @@ class Classe
     private string $localisation;
 
     private array $eleves;   
-    private mixed $ecole; 
+    private Ecole $ecole; 
 
     /**
      * __construct
@@ -173,9 +175,25 @@ class Classe
         }
     }
 
-    public function setEcole(Ecole $ecole)
+    /**
+     * setEcole
+     *
+     * @param  Ecole $ecole
+     * @return void
+     */
+    public function setEcole(Ecole $ecole): void
     {
         $this->ecole = $ecole;
+    }
+
+    /**
+     * getEcole
+     *
+     * @return Ecole
+     */
+    public function getEcole(): Ecole
+    {
+        return $this->ecole;
     }
 
 }

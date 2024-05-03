@@ -2,12 +2,14 @@
 
 namespace Classes;
 
+use Classes\Classe;
+
 class Eleve
 {
     private string $prenom;
     private string $nom;
     private int $age;
-    private mixed $classe;
+    private Classe $classe;
     
     /**
      * __construct
@@ -88,8 +90,24 @@ class Eleve
     }
 
 
-    public function setClasse(Classe $classe)
+    /**
+     * setClasse
+     *
+     * @param  Classe $classe
+     * @return void
+     */
+    public function setClasse(Classe $classe): void
     {
         $this->classe = $classe;
+    }
+
+    /**
+     * getClasse
+     *
+     * @return Classe
+     */
+    public function getClasse(): Classe
+    {
+        return $this->classe;
     }
 }
