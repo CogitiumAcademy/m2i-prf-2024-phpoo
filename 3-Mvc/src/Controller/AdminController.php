@@ -9,8 +9,8 @@ class AdminController extends AbstractController
     public function dashboard()
     {
         //echo 'Dashboard';
-        return new Response('Dashboard admin');
-
+        //return new Response('Dashboard admin');
+        return $this->render('admin/dashboard.html.twig');
     }
 
     public function user()

@@ -8,6 +8,15 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
+    <ul>
+        <li><a href="?">Home</a></li>
+        <li><a href="?action=contact">Contact</a></li>
+        <li><a href="?controller=user&action=login">Login</a></li>
+        <li><a href="?controller=user&action=register">Register</a></li>
+        <li><a href="?controller=user&action=logout">Logout</a></li>
+        <li><a href="?controller=admin&action=dashboard">Admin Dashboard</a></li>
+        <li><a href="?controller=admin&action=user">Admin Users</a></li>
+    </ul>
 {% block content %}{% endblock %}
 </body>
 </html>
